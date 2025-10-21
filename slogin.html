@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Access</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        background: radial-gradient(circle at top, #050c1a, #000);
+        color: #d4d4d4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: rgba(10, 20, 40, 0.9);
+        border: 1px solid #0ff;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 400px;
+        padding: 30px;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      }
+
+      .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px #0ff;
+      }
+
+      h1 {
+        text-align: center;
+        color: #6cf;
+        font-size: 1.8rem;
+        text-shadow: 0 0 10px #3ff;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      label {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        color: #9fd;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #0ff;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        font-size: 1rem;
+        outline: none;
+        transition: 0.3s;
+      }
+
+      input:focus {
+        border-color: #39f;
+        box-shadow: 0 0 10px #39f;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .btn button {
+        flex: 1;
+        padding: 10px 0;
+        background: linear-gradient(90deg, #00ccff, #0066ff);
+        border: none;
+        border-radius: 8px;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 10px;
+      }
+
+      .btn button:hover {
+        box-shadow: 0 0 15px #00f6ff;
+      }
+
+      .error-box {
+        background: rgba(255, 0, 80, 0.15);
+        border: 1px solid #f06;
+        color: #f68;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="https://via.placeholder.com/80x80?text=S" alt="Logo" />
+        <h1>SYSTEM ACCESS</h1>
+      </div>
+
+      <form id="accessForm">
+        <label for="agent">AGENT ID</label>
+        <input type="text" id="agent" placeholder="Enter Agent ID" required />
+
+        <label for="passkey">PASSKEY</label>
+        <input
+          type="password"
+          id="passkey"
+          placeholder="Enter Passkey"
+          required
+        />
+
+        <label for="auth">AUTHENTICATION CODE: 3 + 2 = ?</label>
+        <input type="number" id="auth" placeholder="Your Answer" required />
+
+        <div class="btn">
+          <button type="submit">INITIATE</button>
+          <button
+            type="button"
+            style="
+              background: linear-gradient(90deg, #00ff99, #00cc66);
+              color: #000;
+            "
+          >
+            OR
+          </button>
+        </div>
+      </form>
+
+      <div class="error-box" id="errorBox" style="display: none">
+        Error: The operation either timed out or was not allowed.
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("accessForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const auth = document.getElementById("auth").value;
+          if (auth != 5) {
+            const box = document.getElementById("errorBox");
+            box.style.display = "block";
+            box.innerHTML = "Error: Authentication failed. Incorrect code.";
+          } else {
+            alert("Access Granted! Redirecting...");
+          }
+        });
+    </script>
+  </body>
+</html>

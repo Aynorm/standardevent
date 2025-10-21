@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizer Management Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #0b0d20;
+        color: #d6d6e0;
+        display: flex;
+        height: 100vh;
+      }
+
+      .sidebar {
+        width: 240px;
+        background: linear-gradient(180deg, #09142a, #0b0d20);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid #1e2a4a;
+      }
+
+      .sidebar h2 {
+        color: #00baff;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        padding: 12px 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        transition: background 0.3s;
+        cursor: pointer;
+      }
+
+      .sidebar ul li:hover,
+      .active {
+        background: #112855;
+        color: #00baff;
+      }
+
+      .main {
+        flex: 1;
+        padding: 20px;
+        background: radial-gradient(circle at top left, #0e1730, #060913);
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #1e2a4a;
+        padding-bottom: 10px;
+      }
+
+      .header h1 {
+        color: #00baff;
+        font-size: 20px;
+      }
+
+      .header button {
+        background: #00baff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .header button:hover {
+        background: #0284c7;
+      }
+
+      .content {
+        margin-top: 20px;
+        background: #0d1328;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .content h2 {
+        color: #b37bff;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid #1e2a4a;
+      }
+
+      th {
+        color: #00baff;
+      }
+
+      td span {
+        color: #39ff14;
+        font-weight: bold;
+      }
+
+      .search {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .search input {
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background: #101830;
+        color: white;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>MANAGER</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Events</li>
+        <li>Chat</li>
+        <li class="active">Organizers</li>
+        <li>Docs</li>
+        <li>Complaints</li>
+        <li>Suggestions</li>
+        <li>Report</li>
+      </ul>
+      <hr style="border-color: #1e2a4a; margin: 20px 0" />
+      <ul>
+        <li>Mr. Kingsley</li>
+        <li style="color: red">Logout</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        <h1>Organizer Management</h1>
+        <button>Total Organizers: 4</button>
+      </div>
+
+      <div class="content">
+        <h2>All Organizers</h2>
+        <div class="search">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by name, username or email..."
+          />
+        </div>
+
+        <table id="organizerTable">
+          <thead>
+            <tr>
+              <th>Display Name</th>
+              <th>Total Earnings</th>
+              <th>Bank Details</th>
+              <th>Last Payout</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ayomide</td>
+              <td><span>N/A</span></td>
+              <td>Opay (8021234061)</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>Moatelo</td>
+              <td><span>#14,576.00</span></td>
+              <td>Opay (7934036124)</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>Oluwapotemi</td>
+              <td><span>N/A</span></td>
+              <td>Opay (7933035633)</td>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      // Simple search filter functionality
+      const searchInput = document.getElementById("search");
+      const tableRows = document.querySelectorAll("#organizerTable tbody tr");
+
+      searchInput.addEventListener("keyup", () => {
+        const query = searchInput.value.toLowerCase();
+        tableRows.forEach((row) => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(query) ? "" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

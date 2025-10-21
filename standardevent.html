@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Standardevent — Event Profile (recreation)</title>
+    <link rel="stylesheet" href="standardevent.css" />
+    <link rel="icon" type href="images/favicon.png" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <div><h1 style="color: white; text-align: center">STANDARD</h1></div>
+    <!-- top navigation (icons replaced with text for brevity; replace with icons) -->
+    <nav class="top-nav" aria-label="Primary">
+      <!-- <a href="#events" title="About"
+        ><img class="side-img" src="images/home btn.png" alt="home" />HOME</a
+      > -->
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M3 10.5 L12 4 L21 10.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7 11.5v7h10v-7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          HOME</a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="12"
+              y1="10"
+              x2="12"
+              y2="16"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <circle cx="12" cy="7" r="1.2" fill="currentColor" />
+          </svg>
+          ABOUT</a
+        >
+      </div>
+      <!-- <a href="#about" class="active" title="About"
+        ><img class="side-img" src="images/about.webp" alt="about" /> ABOUT</a
+      > -->
+      <!--EVents error-->
+      <div>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="17"
+              rx="2"
+              ry="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="3"
+              y1="8"
+              x2="21"
+              y2="8"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="8"
+              y1="2.5"
+              x2="8"
+              y2="6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <line
+              x1="16"
+              y1="2.5"
+              x2="16"
+              y2="6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <rect
+              x="7"
+              y="11"
+              width="3"
+              height="3"
+              rx="0.5"
+              fill="currentColor"
+            />
+            <rect
+              x="14"
+              y="11"
+              width="3"
+              height="3"
+              rx="0.5"
+              fill="currentColor"
+            /></svg
+          >EVENTS</a
+        >
+      </div>
+      <!-- <a href="#events" title="Events"
+        ><img class="side-img" src="images/event.webp" alt="events" /> EVENTS</a
+      >-->
+
+      <div>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M12 7.5v2m0 5v2m4.33-4.33-1.42 1.42m-5.82-5.82-1.42 1.42m8.66 0-1.42-1.42m-5.82 5.82-1.42-1.42"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <circle cx="12" cy="12" r="2" fill="currentColor" /></svg
+          >SERVICES</a
+        >
+      </div>
+      <!-- <a href="#services" title="Services"
+        ><img class="side-img" src="images/services.webp" alt="services" />
+        SERVICES</a
+      > -->
+
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 12l9-9h6l3 3v6l-9 9-9-9z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <circle cx="15.5" cy="8.5" r="1.2" fill="currentColor" /></svg
+          >PRICING</a
+        >
+      </div>
+      <!-- <a href="#articles" title="Articles"
+        ><img class="side-img" src="images/pricing.webp" alt="priciiinng" />
+        PRICING</a
+      > -->
+
+      <div>
+        <a href=""
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+              ry="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M3 7l9 6 9-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          >CONTACT</a
+        >
+      </div>
+      <!-- <a href="#contact" title="Contact"
+        ><img class="side-img" src="images/contact.webp" alt="contact" />
+        CONTACT</a
+      > -->
+    </nav>
+    <!-- <nav class="top-nav" aria-label="Primary">
+      <a href="#events" title="About"
+        ><img class="side-img" src="images/home btn.png" alt="home" />HOME</a
+      >
+      <a href="#about" class="active" title="About"
+        ><img class="side-img" src="images/about.webp" alt="about" /> ABOUT</a
+      >
+      <a href="#events" title="Events"
+        ><img class="side-img" src="images/event.webp" alt="events" /> EVENTS</a
+      >
+      <a href="#services" title="Services"
+        ><img class="side-img" src="images/services.webp" alt="services" />
+        SERVICES</a
+      >
+      <a href="#articles" title="Articles"
+        ><img class="side-img" src="images/pricing.webp" alt="priciiinng" />
+        PRICING</a
+      >
+      <a href="#contact" title="Contact"
+        ><img class="side-img" src="images/contact.webp" alt="contact" />
+        CONTACT</a
+      >
+    </nav> -->
+    <!-- left navigation (icons replaced with text for brevity; replace with icons) -->
+    <nav class="left-nav" aria-label="Primary">
+      <!-- <a href="#events" title="About"
+        ><img class="side-img" src="images/home btn.png" alt="home" />HOME</a
+      > -->
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M3 10.5 L12 4 L21 10.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7 11.5v7h10v-7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          HOME</a
+        >
+      </div>
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="12"
+              y1="10"
+              x2="12"
+              y2="16"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <circle cx="12" cy="7" r="1.2" fill="currentColor" />
+          </svg>
+          ABOUT</a
+        >
+      </div>
+      <!-- <a href="#about" class="active" title="About"
+        ><img class="side-img" src="images/about.webp" alt="about" /> ABOUT</a
+      > -->
+      <!--EVents error-->
+      <div>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="17"
+              rx="2"
+              ry="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="3"
+              y1="8"
+              x2="21"
+              y2="8"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <line
+              x1="8"
+              y1="2.5"
+              x2="8"
+              y2="6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <line
+              x1="16"
+              y1="2.5"
+              x2="16"
+              y2="6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <rect
+              x="7"
+              y="11"
+              width="3"
+              height="3"
+              rx="0.5"
+              fill="currentColor"
+            />
+            <rect
+              x="14"
+              y="11"
+              width="3"
+              height="3"
+              rx="0.5"
+              fill="currentColor"
+            /></svg
+          >EVENTS</a
+        >
+      </div>
+      <!-- <a href="#events" title="Events"
+        ><img class="side-img" src="images/event.webp" alt="events" /> EVENTS</a
+      >-->
+
+      <div>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M12 7.5v2m0 5v2m4.33-4.33-1.42 1.42m-5.82-5.82-1.42 1.42m8.66 0-1.42-1.42m-5.82 5.82-1.42-1.42"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <circle cx="12" cy="12" r="2" fill="currentColor" /></svg
+          >SERVICES</a
+        >
+      </div>
+      <!-- <a href="#services" title="Services"
+        ><img class="side-img" src="images/services.webp" alt="services" />
+        SERVICES</a
+      > -->
+
+      <div>
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 12l9-9h6l3 3v6l-9 9-9-9z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <circle cx="15.5" cy="8.5" r="1.2" fill="currentColor" /></svg
+          >PRICING</a
+        >
+      </div>
+      <!-- <a href="#articles" title="Articles"
+        ><img class="side-img" src="images/pricing.webp" alt="priciiinng" />
+        PRICING</a
+      > -->
+
+      <div>
+        <a href=""
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+              ry="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M3 7l9 6 9-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          >CONTACT</a
+        >
+      </div>
+      <!-- <a href="#contact" title="Contact"
+        ><img class="side-img" src="images/contact.webp" alt="contact" />
+        CONTACT</a
+      > -->
+    </nav>
+
+    <!-- main container -->
+    <div class="site" role="main">
+      <!-- hero / profile -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-top">
+          <div class="banner" aria-hidden="true">
+            <!-- Replace with your banner artwork -->
+            <div style="text-align: center">
+              <!-- <div
+                style="
+                  font-weight: 900;
+                  font-size: 34px;
+                  color: #04283a;
+                  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.25);
+                "
+              >
+                STANDARDEVENT
+              </div> -->
+              <div>
+                <img class="sbanner" src="images/banner.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <aside class="profile" aria-labelledby="profile-name">
+            <div class="avatar" aria-hidden="true">
+              <img style="width: 100%" src="images/favicon.png" alt="" />
+            </div>
+            <h3 id="profile-name">Standardevent</h3>
+            <p>Hosts & organizers — ticketing, voting, forms, reports</p>
+
+            <div class="actions">
+              <button class="btn" id="registerBtn">
+                <a href="/sregister">REGISTER</a>
+              </button>
+              <button class="btn secondary" id="contactBtn">CONTACT ME</button>
+            </div>
+          </aside>
+        </div>
+
+        <!-- optional small row or stats can go here -->
+      </section>
+
+      <!-- about / services grid -->
+      <div class="grid">
+        <article class="card about" id="about">
+          <h4>About</h4>
+          <p>
+            Standardevent is built for hosts and organizers who want more than
+            the basics. From ticketing to voting to form sales, we’ve woven
+            everything into one seamless solution that is simple to use and
+            powerful enough to handle events of any size.
+          </p>
+
+          <div class="meta" aria-hidden="false">
+            <div class="row">
+              <span>Created</span><span>26 March 2021</span>
+            </div>
+            <div class="row"><span>BN number</span><span>341666</span></div>
+            <div class="row"><span>Country</span><span>Nigeria</span></div>
+          </div>
+
+          <h4 style="margin-top: 18px">Services</h4>
+          <div class="services-grid" id="services">
+            <div class="service">
+              <div class="icon">
+                <svg
+                  aria-hidden="true"
+                  class="e-font-icon-svg e-fas-vote-yea"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h5>Contest</h5>
+                <p>
+                  Voting that is transparent, secure and interactive — no
+                  confusion, no bias.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">
+                <svg
+                  aria-hidden="true"
+                  class="e-font-icon-svg e-fas-ticket-alt"
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128 160h320v192H128V160zm400 96c0 26.51 21.49 48 48 48v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c26.51 0 48-21.49 48-48s-21.49-48-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v96c-26.51 0-48 21.49-48 48zm-48-104c0-13.255-10.745-24-24-24H120c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V152z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h5>Ticket</h5>
+                <p>
+                  Instant access and full control over pricing, sales, and
+                  attendance.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">
+                <svg
+                  aria-hidden="true"
+                  class="e-font-icon-svg e-fab-wpforms"
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M448 75.2v361.7c0 24.3-19 43.2-43.2 43.2H43.2C19.3 480 0 461.4 0 436.8V75.2C0 51.1 18.8 32 43.2 32h361.7c24 0 43.1 18.8 43.1 43.2zm-37.3 361.6V75.2c0-3-2.6-5.8-5.8-5.8h-9.3L285.3 144 224 94.1 162.8 144 52.5 69.3h-9.3c-3.2 0-5.8 2.8-5.8 5.8v361.7c0 3 2.6 5.8 5.8 5.8h361.7c3.2.1 5.8-2.7 5.8-5.8zM150.2 186v37H76.7v-37h73.5zm0 74.4v37.3H76.7v-37.3h73.5zm11.1-147.3l54-43.7H96.8l64.5 43.7zm210 72.9v37h-196v-37h196zm0 74.4v37.3h-196v-37.3h196zm-84.6-147.3l64.5-43.7H232.8l53.9 43.7zM371.3 335v37.3h-99.4V335h99.4z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h5>Form</h5>
+                <p>
+                  Smart forms for entries, registrations and submissions that
+                  adapt to your needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <div class="icon">
+                <svg
+                  aria-hidden="true"
+                  class="e-font-icon-svg e-fas-chart-bar"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M332.8 320h38.4c6.4 0 12.8-6.4 12.8-12.8V172.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V76.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-288 0h38.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zM496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h5>Report</h5>
+                <p>
+                  Real-time dashboards for sales, votes and engagement to help
+                  you adjust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="card" aria-labelledby="side-stats">
+          <h4 id="side-stats">Quick Links</h4>
+          <p style="color: var(--muted)">
+            Use these to quickly manage your event — register, edit details, or
+            contact support.
+          </p>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              margin-top: 12px;
+            "
+          >
+            <button class="btn" id="quickReg" style="width: 100%">
+              Register to host
+            </button>
+            <button class="btn secondary" id="quickContact" style="width: 100%">
+              Contact Support
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        © <span id="year"></span> Standardevent • Built for events & voting
+      </footer>
+    </div>
+
+    <script>
+      // small interactive behavior: smooth scroll + year + example button handlers
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          const id = a.getAttribute("href").slice(1);
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      document.getElementById("registerBtn").addEventListener("click", () => {
+        alert("Open registration modal (replace with real flow).");
+      });
+      document.getElementById("contactBtn").addEventListener("click", () => {
+        alert("Open contact modal / copy email.");
+      });
+      document.getElementById("quickReg").addEventListener("click", () => {
+        alert("Register flow");
+      });
+      document.getElementById("quickContact").addEventListener("click", () => {
+        alert("Contact support");
+      });
+    </script>
+  </body>
+</html>
